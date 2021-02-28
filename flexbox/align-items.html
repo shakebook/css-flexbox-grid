@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout with flexbox</title>
+  <style>
+    .flex-container {
+      display: flex;
+
+      /*item元素在container元素中，垂直拉伸*/
+      /* align-items: stretch; */
+
+      /*item元素在container元素中，垂直居底*/
+      align-items: flex-end;
+
+      /*item元素在container元素中，继承*/
+      /* align-items: inherit; */
+
+      height: 500px;
+      background-color: DodgerBlue;
+      padding-top: 10px;
+    }
+
+    .flex-container>div {
+      /* height: 100px; 父元素align-items: stretch; item不能定死高度*/
+      width: 100px;
+      margin: 0 0 10px 10px;
+      font-size: 30px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>The align-items Property</h1>
+  <p>
+    column direction layout
+  </p>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+</body>
+
+</html>

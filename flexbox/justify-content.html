@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout with flexbox</title>
+  <style>
+    .flex-container {
+      display: flex;
+
+      /*item元素在container元素中，水平居中*/
+      justify-content: center;
+
+      /*item元素在container元素中，水平居右*/
+      /* justify-content: flex-end; */
+
+      /*item元素在container元素中，两端对齐*/
+      /* justify-content: space-between; */
+
+      /*item元素在container元素中，均分对齐*/
+      /* justify-content: space-around; */
+
+      /*item元素在container元素中，均分对齐*/
+      /* justify-content: space-evenly; */
+
+      /*item元素在container元素中，均分对齐*/
+      /* justify-content: stretch; */
+
+
+      /*item元素在container元素中，垂直居中*/
+      /* align-items: center; */
+
+      /*item元素在container元素中，垂直居底*/
+      /* align-items: flex-end; */
+
+      height: 500px;
+      background-color: DodgerBlue;
+      padding-top: 10px;
+    }
+
+    .flex-container>div {
+      height: 100px;
+      width: 100px;
+      line-height: 100px;
+      margin: 0 0 10px 10px;
+      font-size: 30px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>The justify-content Property</h1>
+  <p>
+    The "justify-content: center;" aligns the flex items at the center of the container:
+  </p>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+</body>
+
+</html>

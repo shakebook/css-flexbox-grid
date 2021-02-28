@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-direction</title>
+  <style>
+    .flex-container {
+      display: flex;
+
+      /*自动换行*/
+      /* flex-wrap: wrap; */
+
+      /*不换行*/
+      /* flex-wrap: nowrap; */
+
+      /*自动换行,坐标原点是左下*/
+      flex-wrap: wrap-reverse;
+
+      background-color: DodgerBlue;
+      padding-top: 10px;
+      padding-right: 10px;
+    }
+
+    .flex-container>div {
+      height: 100px;
+      width: 100px;
+      line-height: 100px;
+      margin: 0 0 10px 10px;
+      font-size: 30px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>The flex-wrap Property</h1>
+
+  <p>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+  <p>Try resizing the browser window.</p>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+  </div>
+</body>
+
+</html>

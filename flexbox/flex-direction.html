@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-direction</title>
+  <style>
+    .flex-container {
+      display: flex;
+
+      /*item元素在container元素垂直方向排列，坐标原点为container左上*/
+      flex-direction: column;
+
+      /*item元素在container元素垂直方向排列，坐标原点为container左下*/
+      /* flex-direction: column-reverse; */
+
+      /*flex-direction: column-reverse; item元素在container元素垂直方向排列，坐标原点为container左下，
+      * justify-content: flex-end; 使得item元素在当前排列方向末尾对齐
+      * 注意：此时的原点是左下，所以container元素column的末尾是container的上方
+      */
+      /* flex-direction: column-reverse;
+      justify-content: flex-end; */
+
+
+      /*item元素在container元素水平方向排列，坐标原点为container左上*/
+      /* flex-direction: row; */
+
+      /*item元素在container元素水平方向排列，坐标原点为container右上*/
+      /* flex-direction: row-reverse; */
+
+      /*flex-direction: row-reverse; item元素在container元素水平方向排列，坐标原点为container右上，
+      * justify-content: flex-end; 使得item元素在当前排列方向末尾对齐
+      * 注意：此时的原点是右上，所以container元素的末尾是container的左方
+      */
+      /* flex-direction: row-reverse;
+      justify-content: flex-end; */
+
+
+
+
+
+      height: 500px;
+      background-color: DodgerBlue;
+      padding-top: 10px;
+    }
+
+    .flex-container>div {
+      height: 100px;
+      width: 100px;
+      line-height: 100px;
+      margin: 0 0 10px 10px;
+      font-size: 30px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>The flex-direction Property</h1>
+
+  <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+</body>
+
+</html>
